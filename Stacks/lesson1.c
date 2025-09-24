@@ -1,3 +1,4 @@
+// Implementing stack using linked lists.
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -33,7 +34,7 @@ int pop(struct Node **top) {
 void display(struct Node *top) {
     if (isEmpty(top)) {
         printf("Stack is empty.\n");
-        return;
+        exit(1);
     }
     struct Node *current = top;
     printf("Stack: ");
